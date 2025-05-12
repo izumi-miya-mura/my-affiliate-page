@@ -4,146 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>String Theory</title>
-
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD4S66XEKJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RD4S66XEKJ');
-  </script>
-
   <style>
     body {
       font-family: 'Helvetica Neue', sans-serif;
       background: #fff;
       margin: 0;
       color: #111;
-    }
-
-    header {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-bottom: 1px solid #eee;
+      padding: 40px 20px;
     }
 
-    .logo-container {
+    .profile {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 15px;
+      margin-bottom: 40px;
     }
 
-    .logo-container img {
-      height: 48px;
-      width: 48px;
+    .profile img {
+      width: 96px;
+      height: 96px;
       border-radius: 50%;
+      margin-bottom: 12px;
     }
 
-    .logo-text {
+    .profile h1 {
       font-size: 1.8rem;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
+      margin: 0;
     }
 
-    .catalog {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 40px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .product {
-      background: #f9f9f9;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-      transition: transform 0.2s;
-    }
-
-    .product:hover {
-      transform: translateY(-5px);
-    }
-
-    .product img {
+    .links {
       width: 100%;
-      height: auto;
-      display: block;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 
-    .product-info {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .product h2 {
-      font-size: 1.1rem;
-      color: #222;
-      margin: 10px 0;
-    }
-
-    .product a {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 20px;
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
       background: #111;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 8px;
+      font-size: 1rem;
       transition: background 0.2s;
     }
 
-    .product a:hover {
+    .link-button:hover {
       background: #333;
     }
 
-    @media(max-width: 600px) {
-      header {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
+    @media (max-width: 600px) {
+      .profile h1 {
+        font-size: 1.5rem;
       }
 
-      .logo-text {
-        font-size: 1.5rem;
+      .link-button {
+        font-size: 0.95rem;
+        padding: 14px;
       }
     }
   </style>
 </head>
-<body> 
-  <header>
-    <div class="logo-container">
-      <img src="logo.jpg" alt="Logo">
-      <div class="logo-text">String Theory</div>
-    </div>
-  </header>
+<body>
+  <div class="profile">
+    <img src="logo.jpg" alt="Logo">
+    <h1>String Theory</h1>
+  </div>
 
-  <div class="catalog">
-    <div class="product">
-      <a href="https://amzn.to/4it74Aj" target="_blank">
-        <img src="neurogum2.jpg" alt="NeuroGum Energy Caffeine Gum">
-      </a>
-      <div class="product-info">
-        <h2>NeuroGum Energy Caffeine Gum</h2>
-        <a href="https://amzn.to/4it74Aj" target="_blank">Buy on Amazon</a>
-      </div>
-    </div>
+  <div class="links">
+    <!-- Actual products -->
+    <a class="link-button" href="https://amzn.to/4it74Aj" target="_blank">NeuroGum Energy Caffeine Gum</a>
+    <a class="link-button" href="https://amzn.to/4jvYimK" target="_blank">NeuroGum Energy Caffeine Gum</a>
 
-    <div class="product">
-      <a href="https://amzn.to/4jvYimK" target="_blank">
-        <img src="neurogum.jpg" alt="NeuroGum Energy Caffeine Gum">
-      </a>
-      <div class="product-info">
-        <h2>NeuroGum Energy Caffeine Gum</h2>
-        <a href="https://amzn.to/4jvYimK" target="_blank">Buy on Amazon</a>
-      </div>
-    </div>
+    <!-- Dummy rows for future items -->
+    <a class="link-button" href="#" target="_blank">Product Placeholder 1</a>
+    <a class="link-button" href="#" target="_blank">Product Placeholder 2</a>
+    <a class="link-button" href="#" target="_blank">Product Placeholder 3</a>
+    <a class="link-button" href="#" target="_blank">Product Placeholder 4</a>
+    <a class="link-button" href="#" target="_blank">Product Placeholder 5</a>
+    <a class="link-button" href="#" target="_blank">Product Placeholder 6</a>
   </div>
 </body>
 </html>
